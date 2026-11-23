@@ -1,0 +1,36 @@
+{
+  "male": {
+    "digestive": "male/digestive.glb",
+    "nervous": "male/nervous.glb",
+    "muscular": "male/muscular.glb",
+    "integumentary": "male/integumentary.glb",
+    "cardiovascular": "male/cardiovascular.glb",
+    "respiratory": "male/respiratory.glb",
+    "skeletal": "male/skeletal.glb",
+    "urinary": "male/urinary.glb",
+    "reproductive": "male/reproductive.glb",
+    "lymphatic": "male/lymphatic.glb"
+  },
+  "organs": {
+    "heart": "organs/heart.glb",
+    "lungs": "organs/lungs.glb",
+    "brain": "organs/brain.glb",
+    "kidneys": "organs/kidneys.glb",
+    "liver": "organs/liver.glb",
+    "stomach": "organs/stomach.glb",
+    "eye": "organs/eye.glb"
+  },
+  "credit": "BodyParts3D, © The Database Center for Life Science, CC BY-SA 2.1 JP",
+  "female": {
+    "digestive": "female/digestive.glb",
+    "nervous": "female/nervous.glb",
+    "muscular": "female/muscular.glb",
+    "integumentary": "female/integumentary.glb",
+    "cardiovascular": "female/cardiovascular.glb",
+    "respiratory": "female/respiratory.glb",
+    "skeletal": "female/skeletal.glb",
+    "urinary": "female/urinary.glb",
+    "lymphatic": "female/lymphatic.glb",
+    "reproductive": "female/reproductive.glb"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "kidneys",
+  "scale": 8.421052016770066,
+  "hotspots": [
+    {
+      "number": 1,
+      "label": "Renal cortex",
+      "description": "Outer layer containing the glomeruli that filter the blood",
+      "position": [
+        0.7101,
+        0.4385,
+        -0.2091
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Left kidney"
+    },
+    {
+      "number": 2,
+      "label": "Renal artery",
+      "description": "Brings ~20% of cardiac output to the kidney",
+      "position": [
+        0.1583,
+        0.3282,
+        0.1256
+      ],
+      "internal": false,
+      "part": "Left renal artery"
+    },
+    {
+      "number": 3,
+      "label": "Ureter",
+      "description": "Muscular tube carrying urine down to the bladder",
+      "position": [
+        0.6551,
+        0.2007,
+        -0.1602
+      ],
+      "internal": false,
+      "part": "Left ureter"
+    },
+    {
+      "number": 4,
+      "label": "Adrenal gland",
+      "description": "Endocrine gland on the upper pole: cortisol, aldosterone, adrenaline",
+      "position": [
+        0.4588,
+        0.8256,
+        -0.2393
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Left adrenal gland"
+    },
+    {
+      "number": 5,
+      "label": "Abdominal aorta",
+      "description": "Gives off the renal arteries at the level of L1/L2",
+      "position": [
+        0.0859,
+        0.5683,
+        0.1875
+      ],
+      "internal": false,
+      "part": "Abdominal aorta"
+    },
+    {
+      "number": 6,
+      "label": "Inferior vena cava",
+      "description": "Receives both renal veins",
+      "position": [
+        -0.1829,
+        1.0863,
+        0.2377
+      ],
+      "internal": false,
+      "part": "Inferior vena cava"
+    }
+  ]
+}

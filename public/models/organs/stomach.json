@@ -1,0 +1,92 @@
+{
+  "id": "stomach",
+  "scale": 10.189100855048164,
+  "hotspots": [
+    {
+      "number": 1,
+      "label": "Oesophagus",
+      "description": "Muscular tube delivering swallowed food to the stomach",
+      "position": [
+        -0.2778,
+        1.0853,
+        -0.5934
+      ],
+      "internal": false,
+      "part": "Esophagus"
+    },
+    {
+      "number": 2,
+      "label": "Fundus",
+      "description": "Dome above the cardia; often holds swallowed air",
+      "position": [
+        0.3936,
+        0.6005,
+        -0.1499
+      ],
+      "important": true
+    },
+    {
+      "number": 3,
+      "label": "Body",
+      "description": "Main part where food is mixed with acid and pepsin",
+      "position": [
+        0.5738,
+        -0.4463,
+        0.2552
+      ]
+    },
+    {
+      "number": 4,
+      "label": "Greater curvature",
+      "description": "Long convex lateral border; attachment of the greater omentum",
+      "position": [
+        0.5845,
+        -0.4403,
+        0.2502
+      ]
+    },
+    {
+      "number": 5,
+      "label": "Lesser curvature",
+      "description": "Short concave medial border; common site of gastric ulcers",
+      "position": [
+        -0.1918,
+        -0.2726,
+        0.5509
+      ]
+    },
+    {
+      "number": 6,
+      "label": "Pyloric antrum",
+      "description": "Grinds food and regulates emptying",
+      "position": [
+        -0.4846,
+        -0.3912,
+        0.1871
+      ]
+    },
+    {
+      "number": 7,
+      "label": "Duodenum",
+      "description": "First part of the small intestine",
+      "position": [
+        -0.7171,
+        -1.0927,
+        -0.0717
+      ],
+      "internal": false,
+      "part": "Duodenum"
+    },
+    {
+      "number": 8,
+      "label": "Gastric rugae",
+      "description": "Folds of mucosa that flatten as the stomach fills (use cross-section)",
+      "position": [
+        0.1673,
+        -0.0047,
+        0.0738
+      ],
+      "internal": true
+    }
+  ]
+}

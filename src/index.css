@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --accent: #14b8a6;
+  --amber: #f59e0b;
+  --ink: #061316;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: var(--ink);
+  color: #e6edf3;
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+  /* Frosted-glass panel */
+  .glass {
+    background: linear-gradient(160deg, rgba(45, 212, 191, 0.075), rgba(8, 30, 34, 0.32));
+    -webkit-backdrop-filter: blur(24px) saturate(150%);
+    backdrop-filter: blur(24px) saturate(150%);
+    border: 1px solid rgba(94, 234, 212, 0.13);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .glass-strong {
+    background: rgba(8, 28, 32, 0.9);
+    -webkit-backdrop-filter: blur(24px) saturate(150%);
+    backdrop-filter: blur(24px) saturate(150%);
+    border: 1px solid rgba(94, 234, 212, 0.14);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.6);
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-xl px-3 py-2 text-[13px] font-medium text-white/80 transition
+      hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-[0.97];
+  }
+  .btn-active {
+    @apply bg-accent/90 text-white shadow-[0_0_18px_-4px_#14B8A6] hover:bg-accent;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-medium text-white/75;
+  }
+  .section-title {
+    @apply text-[10.5px] font-semibold uppercase tracking-[0.16em] text-white/45;
+  }
+}
+
+/* Accent range slider */
+input[type='range'].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+  background: transparent;
+  cursor: pointer;
+  touch-action: none;
+}
+input[type='range'].slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--accent) 0%, var(--accent) var(--fill, 0%), rgba(255, 255, 255, 0.12) var(--fill, 0%));
+}
+input[type='range'].slider::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+input[type='range'].slider::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+input[type='range'].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 0 6px rgba(20, 184, 166, 0.18), 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+input[type='range'].slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid var(--accent);
+}
+input[type='range'].slider:focus-visible {
+  outline: none;
+}
+input[type='range'].slider:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 8px rgba(20, 184, 166, 0.35);
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+/* Hide drei Html labels when canvas is paused behind the organ screen */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ---------------- Name labels (LabelOverlay) ---------------- */
+.av-labels {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+.av-labels.show {
+  opacity: 1;
+}
+.av-leaders {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.av-leaders path {
+  fill: none;
+  stroke: rgba(226, 240, 238, 0.42);
+  stroke-width: 1;
+}
+.av-leaders circle {
+  fill: #5eead4;
+  stroke: rgba(10, 14, 20, 0.8);
+  stroke-width: 1;
+}
+.av-label,
+.av-grid-label {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 2px 8px 2px 6px;
+  border-radius: 999px;
+  background: rgba(10, 14, 20, 0.62);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 10.5px;
+  line-height: 14px;
+  white-space: nowrap;
+  cursor: default;
+}
+.av-labels.show .av-label,
+.av-labels.show .av-grid-label {
+  pointer-events: auto;
+}
+.av-label {
+  transform: translateY(-50%);
+}
+.av-grid-label {
+  transform: translateX(-50%);
+  justify-content: center;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 6px;
+}
+.av-dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  margin-top: 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+.av-txt {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.av-en {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.av-lat {
+  display: none;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.av-label:hover,
+.av-label.open,
+.av-grid-label:hover,
+.av-grid-label.open {
+  z-index: 2;
+  max-width: none !important;
+  width: auto !important;
+  border-radius: 10px;
+  border-color: rgba(20, 184, 166, 0.6);
+}
+.av-label:hover .av-lat,
+.av-label.open .av-lat,
+.av-grid-label:hover .av-lat,
+.av-grid-label.open .av-lat {
+  display: block;
+}
+.av-hint {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 112px;
+  transform: translateX(-50%);
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(10, 14, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11.5px;
+}
+/* grid names: centred, up to two lines inside the cell's name band */
+.av-grid-label {
+  white-space: normal;
+  text-align: center;
+  line-height: 12px;
+}
+.av-grid-label .av-en {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+/* Skelly's sound wave while speaking */
+@keyframes skelly-wave {
+  0%, 100% { height: 3px; }
+  50% { height: 14px; }
+}
+.skelly-wave {
+  height: 3px;
+  animation: skelly-wave 0.55s ease-in-out infinite;
+}
+
+/* Skelly floats: its shadow breathes with the bob (same ~3.5 s period as the 3D float) */
+@keyframes skelly-shadow {
+  0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.9; }
+  50% { transform: translateX(-50%) scale(0.8); opacity: 0.55; }
+}
+.skelly-shadow {
+  animation: skelly-shadow 3.5s ease-in-out infinite;
+}

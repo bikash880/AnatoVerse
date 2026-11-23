@@ -1,0 +1,114 @@
+{
+  "id": "brain",
+  "scale": 12.22179426298064,
+  "hotspots": [
+    {
+      "number": 1,
+      "label": "Frontal lobe",
+      "description": "Planning, personality, voluntary movement and (left) speech production",
+      "position": [
+        0.2024,
+        0.8169,
+        0.6358
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Left superior frontal gyrus"
+    },
+    {
+      "number": 2,
+      "label": "Central sulcus",
+      "description": "Separates the motor (precentral) from the sensory (postcentral) gyrus",
+      "position": [
+        0.5009,
+        0.8598,
+        -0.1762
+      ],
+      "internal": false,
+      "part": "Left precentral gyrus"
+    },
+    {
+      "number": 3,
+      "label": "Parietal lobe",
+      "description": "Somatosensory processing and spatial awareness",
+      "position": [
+        0.2516,
+        0.5387,
+        -0.909
+      ],
+      "internal": false,
+      "part": "Left superior parietal lobule"
+    },
+    {
+      "number": 4,
+      "label": "Occipital lobe",
+      "description": "Primary visual cortex",
+      "position": [
+        0.2977,
+        -0.0882,
+        -1.058
+      ],
+      "internal": false,
+      "part": "Left occipital lobe"
+    },
+    {
+      "number": 5,
+      "label": "Temporal lobe",
+      "description": "Hearing, memory (hippocampus) and language comprehension",
+      "position": [
+        0.8227,
+        -0.0957,
+        -0.2311
+      ],
+      "internal": false,
+      "part": "Left middle temporal gyrus"
+    },
+    {
+      "number": 6,
+      "label": "Longitudinal fissure",
+      "description": "Deep cleft separating the two cerebral hemispheres",
+      "position": [
+        0.0191,
+        0.8906,
+        0.2577
+      ]
+    },
+    {
+      "number": 7,
+      "label": "Cerebellum",
+      "description": "Coordinates movement, balance and posture",
+      "position": [
+        -0.1537,
+        -0.6034,
+        -0.7457
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Cerebellum"
+    },
+    {
+      "number": 8,
+      "label": "Brainstem",
+      "description": "Midbrain, pons and medulla — vital centres for breathing and heart rate",
+      "position": [
+        0.0507,
+        -0.5524,
+        0.0504
+      ],
+      "internal": false,
+      "part": "Pons"
+    },
+    {
+      "number": 9,
+      "label": "Hippocampus",
+      "description": "Curved structure in the medial temporal lobe essential for forming new memories (use cross-section)",
+      "position": [
+        0.3329,
+        -0.1127,
+        -0.0023
+      ],
+      "internal": true,
+      "part": "Left hippocampus"
+    }
+  ]
+}

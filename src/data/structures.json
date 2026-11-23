@@ -1,0 +1,82 @@
+[
+  {
+    "id": "serratus-anterior-r",
+    "nameEn": "Serratus anterior",
+    "nameLatin": "musculus serratus anterior",
+    "taId": null,
+    "system": "muscular",
+    "region": "thorax",
+    "layer": 1,
+    "side": "right",
+    "sex": "both",
+    "meshFile": "procedural",
+    "overview": "Broad, saw-toothed muscle wrapping around the lateral thoracic wall from the upper eight ribs to the medial border of the scapula. It is the main protractor of the scapula (the “boxer’s muscle”).",
+    "clinicalNote": "Injury to the long thoracic nerve (e.g. during axillary node clearance) paralyses serratus anterior, producing a “winged” scapula when the patient pushes against a wall.",
+    "facts": {
+      "origin": "External surfaces of the lateral parts of ribs 1–8",
+      "insertion": "Costal (anterior) surface of the medial border of the scapula",
+      "action": "Protracts the scapula and rotates it upward; holds it against the thoracic wall",
+      "innervation": "Long thoracic nerve (C5–C7)",
+      "bloodSupply": "Lateral thoracic and thoracodorsal arteries"
+    }
+  },
+  {
+    "id": "serratus-anterior-l",
+    "nameEn": "Serratus anterior",
+    "nameLatin": "musculus serratus anterior",
+    "taId": null,
+    "system": "muscular",
+    "region": "thorax",
+    "layer": 1,
+    "side": "left",
+    "sex": "both",
+    "meshFile": "procedural",
+    "overview": "Broad, saw-toothed muscle wrapping around the lateral thoracic wall from the upper eight ribs to the medial border of the scapula. It is the main protractor of the scapula (the “boxer’s muscle”).",
+    "clinicalNote": "Injury to the long thoracic nerve (e.g. during axillary node clearance) paralyses serratus anterior, producing a “winged” scapula when the patient pushes against a wall.",
+    "facts": {
+      "origin": "External surfaces of the lateral parts of ribs 1–8",
+      "insertion": "Costal (anterior) surface of the medial border of the scapula",
+      "action": "Protracts the scapula and rotates it upward; holds it against the thoracic wall",
+      "innervation": "Long thoracic nerve (C5–C7)",
+      "bloodSupply": "Lateral thoracic and thoracodorsal arteries"
+    }
+  },
+  {
+    "id": "heart",
+    "nameEn": "Heart",
+    "nameLatin": "cor",
+    "taId": "A12.1.00.001",
+    "system": "cardiovascular",
+    "region": "thorax",
+    "layer": 3,
+    "side": "midline",
+    "sex": "both",
+    "meshFile": "procedural",
+    "overview": "Four-chambered muscular pump in the middle mediastinum, enclosed in the pericardium, about the size of a closed fist (~300 g). Its apex lies in the left 5th intercostal space at the mid-clavicular line.",
+    "clinicalNote": "Cardiac tamponade (fluid in the pericardium) presents with Beck’s triad: hypotension, raised JVP and muffled heart sounds.",
+    "facts": {
+      "function": "Pumps deoxygenated blood to the lungs (right heart) and oxygenated blood to the body (left heart); ~5 L/min at rest",
+      "bloodSupply": "Right and left coronary arteries; venous drainage via the coronary sinus into the right atrium",
+      "innervation": "Cardiac plexus (sympathetic T1–T4 accelerates, vagus slows); intrinsic conduction system (SA node → AV node → bundle of His → Purkinje fibres)"
+    }
+  },
+  {
+    "id": "liver",
+    "nameEn": "Liver",
+    "nameLatin": "hepar",
+    "taId": "A05.8.01.001",
+    "system": "digestive",
+    "region": "abdomen",
+    "layer": 3,
+    "side": "midline",
+    "sex": "both",
+    "meshFile": "procedural",
+    "overview": "Largest internal organ and gland (~1.5 kg), occupying the right hypochondrium and epigastrium beneath the diaphragm. Divided functionally into eight Couinaud segments.",
+    "clinicalNote": "Cirrhosis causes portal hypertension (varices, ascites, splenomegaly) and reduced synthetic function (low albumin, prolonged INR).",
+    "facts": {
+      "function": "Carbohydrate, lipid and protein metabolism; bile production; synthesis of albumin and clotting factors; detoxification and drug metabolism; storage of glycogen, iron, vitamins A, D, B12",
+      "bloodSupply": "Hepatic artery proper (~25% of flow, ~50% of oxygen) and hepatic portal vein (~75% of flow); drained by hepatic veins into the IVC",
+      "innervation": "Hepatic plexus (vagal and coeliac sympathetic fibres)"
+    }
+  }
+]

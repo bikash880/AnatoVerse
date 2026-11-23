@@ -1,0 +1,115 @@
+{
+  "id": "eye",
+  "scale": 46.54312001050408,
+  "hotspots": [
+    {
+      "number": 1,
+      "label": "Cornea",
+      "description": "Clear dome that provides most of the eye's focusing power",
+      "position": [
+        0.1408,
+        -0.0614,
+        1.0864
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Left cornea"
+    },
+    {
+      "number": 2,
+      "label": "Iris",
+      "description": "Pigmented muscular ring controlling pupil size",
+      "position": [
+        0.1313,
+        -0.0491,
+        0.8744
+      ],
+      "internal": true,
+      "part": "Left iris"
+    },
+    {
+      "number": 3,
+      "label": "Lens",
+      "description": "Changes shape to focus near and far (accommodation)",
+      "position": [
+        0.1175,
+        -0.0473,
+        0.7712
+      ],
+      "internal": true,
+      "part": "Left lens"
+    },
+    {
+      "number": 4,
+      "label": "Sclera",
+      "description": "Tough white outer coat of the eyeball",
+      "position": [
+        0.4384,
+        -0.1676,
+        0.9217
+      ],
+      "internal": false,
+      "part": "Left sclera"
+    },
+    {
+      "number": 5,
+      "label": "Retina & choroid",
+      "description": "Light-sensitive retina lies on the vascular choroid inside the sclera (use cross-section)",
+      "position": [
+        0.1082,
+        -0.0452,
+        0.4507
+      ],
+      "internal": true,
+      "part": "Left choroid"
+    },
+    {
+      "number": 6,
+      "label": "Superior rectus",
+      "description": "Elevates the eye (CN III)",
+      "position": [
+        -0.042,
+        0.6325,
+        0.3044
+      ],
+      "internal": false,
+      "part": "Left superior rectus"
+    },
+    {
+      "number": 7,
+      "label": "Lateral rectus",
+      "description": "Abducts the eye (CN VI)",
+      "position": [
+        0.7027,
+        0.1969,
+        0.2981
+      ],
+      "internal": false,
+      "part": "Left lateral rectus"
+    },
+    {
+      "number": 8,
+      "label": "Inferior rectus",
+      "description": "Depresses the eye (CN III)",
+      "position": [
+        -0.2959,
+        -0.5683,
+        0.0528
+      ],
+      "internal": false,
+      "part": "Left inferior rectus"
+    },
+    {
+      "number": 9,
+      "label": "Medial rectus",
+      "description": "Adducts the eye (CN III)",
+      "position": [
+        -0.6137,
+        0.1238,
+        0.2348
+      ],
+      "internal": false,
+      "part": "Left medial rectus"
+    }
+  ]
+}

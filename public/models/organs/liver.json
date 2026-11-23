@@ -1,0 +1,104 @@
+{
+  "id": "liver",
+  "scale": 10.504663171219404,
+  "hotspots": [
+    {
+      "number": 1,
+      "label": "Right lobe",
+      "description": "Largest lobe, under the right dome of the diaphragm",
+      "position": [
+        -1.0155,
+        -0.393,
+        -0.2394
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Hepatovenous segment VII"
+    },
+    {
+      "number": 2,
+      "label": "Left lobe",
+      "description": "Thinner lobe extending across the epigastrium",
+      "position": [
+        0.7514,
+        0.7769,
+        0.3449
+      ],
+      "internal": false,
+      "part": "Hepatovenous segment II"
+    },
+    {
+      "number": 3,
+      "label": "Caudate lobe",
+      "description": "Small posterior lobe beside the IVC",
+      "position": [
+        0.0189,
+        0.802,
+        0.0214
+      ],
+      "internal": false,
+      "part": "Caudate lobe of liver"
+    },
+    {
+      "number": 4,
+      "label": "Gallbladder",
+      "description": "Stores and concentrates bile",
+      "position": [
+        -0.5272,
+        -0.3709,
+        0.5091
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Gallbladder"
+    },
+    {
+      "number": 5,
+      "label": "Common bile duct",
+      "description": "Carries bile to the duodenum",
+      "position": [
+        -0.3462,
+        -0.7421,
+        -0.0268
+      ],
+      "internal": false,
+      "part": "Common hepatic duct"
+    },
+    {
+      "number": 6,
+      "label": "Hepatic portal vein",
+      "description": "Brings nutrient-rich blood from the gut (75% of liver inflow)",
+      "position": [
+        -0.0447,
+        -0.0903,
+        0.1385
+      ],
+      "internal": false,
+      "part": "Hepatic portal vein"
+    },
+    {
+      "number": 7,
+      "label": "Hepatic artery proper",
+      "description": "Supplies oxygenated blood (25% of inflow)",
+      "position": [
+        0.0641,
+        -0.158,
+        0.1855
+      ],
+      "internal": false,
+      "part": "Common hepatic artery"
+    },
+    {
+      "number": 8,
+      "label": "Inferior vena cava",
+      "description": "Receives the hepatic veins behind the liver",
+      "position": [
+        -0.1209,
+        1.0345,
+        -0.1724
+      ],
+      "internal": false,
+      "part": "Inferior vena cava"
+    }
+  ]
+}

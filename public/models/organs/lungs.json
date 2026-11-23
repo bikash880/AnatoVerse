@@ -1,0 +1,124 @@
+{
+  "id": "lungs",
+  "scale": 5.371251382108711,
+  "hotspots": [
+    {
+      "number": 1,
+      "label": "Trachea",
+      "description": "Carries air from the throat to the lungs",
+      "position": [
+        -0.0442,
+        1.1,
+        -0.0376
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Trachea"
+    },
+    {
+      "number": 2,
+      "label": "Right main bronchus",
+      "description": "Wider, shorter and more vertical — inhaled objects usually lodge here",
+      "position": [
+        -0.1993,
+        0.5443,
+        -0.1365
+      ],
+      "internal": false,
+      "part": "Right main bronchus proper"
+    },
+    {
+      "number": 3,
+      "label": "Left main bronchus",
+      "description": "Longer and more horizontal, passing under the aortic arch",
+      "position": [
+        0.3458,
+        0.5518,
+        -0.0897
+      ],
+      "internal": false,
+      "part": "Left main bronchus"
+    },
+    {
+      "number": 4,
+      "label": "Right upper lobe",
+      "description": "Separated from the middle lobe by the horizontal fissure",
+      "position": [
+        -0.3789,
+        0.8352,
+        -0.1899
+      ],
+      "internal": false,
+      "part": "Right lung — upper lobe"
+    },
+    {
+      "number": 5,
+      "label": "Right middle lobe",
+      "description": "Wedge between the horizontal and oblique fissures (right lung only)",
+      "position": [
+        -0.643,
+        0.2741,
+        0.1604
+      ],
+      "internal": false,
+      "part": "Right lung — middle lobe"
+    },
+    {
+      "number": 6,
+      "label": "Right lower lobe",
+      "description": "Largest lobe; auscultated over the posterior chest",
+      "position": [
+        -0.5682,
+        0.2353,
+        -0.4507
+      ],
+      "internal": false,
+      "part": "Right lung — lower lobe"
+    },
+    {
+      "number": 7,
+      "label": "Left upper lobe",
+      "description": "Includes the lingula, the left counterpart of the middle lobe",
+      "position": [
+        0.5038,
+        0.7654,
+        -0.1381
+      ],
+      "internal": false,
+      "part": "Left lung — upper lobe"
+    },
+    {
+      "number": 8,
+      "label": "Left lower lobe",
+      "description": "Separated from the upper lobe by the oblique fissure",
+      "position": [
+        0.6623,
+        -0.0636,
+        -0.2602
+      ],
+      "internal": false,
+      "part": "Left lung — lower lobe"
+    },
+    {
+      "number": 9,
+      "label": "Cardiac notch",
+      "description": "Indentation of the left lung accommodating the heart",
+      "position": [
+        0.2634,
+        0.0099,
+        0.4891
+      ]
+    },
+    {
+      "number": 10,
+      "label": "Diaphragmatic surface",
+      "description": "Concave base of the lung resting on the dome of the diaphragm",
+      "position": [
+        -0.509,
+        -0.3672,
+        -0.1787
+      ],
+      "important": true
+    }
+  ]
+}

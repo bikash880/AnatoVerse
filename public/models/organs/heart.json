@@ -1,0 +1,119 @@
+{
+  "id": "heart",
+  "scale": 10.790663690916459,
+  "hotspots": [
+    {
+      "number": 1,
+      "label": "Aorta",
+      "description": "The main artery carrying blood out of the heart",
+      "position": [
+        0.0411,
+        0.9627,
+        -0.2951
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Arch of aorta"
+    },
+    {
+      "number": 2,
+      "label": "Superior vena cava",
+      "description": "Returns deoxygenated blood from the head, neck and arms to the right atrium",
+      "position": [
+        -0.2308,
+        0.5565,
+        0.0589
+      ]
+    },
+    {
+      "number": 3,
+      "label": "Pulmonary trunk",
+      "description": "Carries deoxygenated blood from the right ventricle to the lungs",
+      "position": [
+        0.1763,
+        0.6357,
+        0.2394
+      ],
+      "internal": false,
+      "part": "Pulmonary trunk"
+    },
+    {
+      "number": 4,
+      "label": "Right atrium",
+      "description": "Receives venous blood from the body via the venae cavae",
+      "position": [
+        -0.5255,
+        0.0603,
+        0.1694
+      ],
+      "internal": false,
+      "part": "Wall of right atrium"
+    },
+    {
+      "number": 5,
+      "label": "Left atrium",
+      "description": "Receives oxygenated blood from the four pulmonary veins",
+      "position": [
+        0.147,
+        0.3012,
+        -0.4339
+      ],
+      "internal": false,
+      "part": "Wall of left atrium"
+    },
+    {
+      "number": 6,
+      "label": "Right ventricle",
+      "description": "Pumps blood through the pulmonary valve to the lungs",
+      "position": [
+        0.1574,
+        -0.0233,
+        0.7042
+      ]
+    },
+    {
+      "number": 7,
+      "label": "Left ventricle",
+      "description": "Thick-walled chamber pumping oxygenated blood into the aorta",
+      "position": [
+        0.6184,
+        -0.3112,
+        0.5191
+      ],
+      "important": true
+    },
+    {
+      "number": 8,
+      "label": "Coronary arteries",
+      "description": "Supply the heart muscle itself; the LAD runs in the anterior interventricular groove",
+      "position": [
+        0.4429,
+        -0.1694,
+        0.5379
+      ],
+      "important": true,
+      "internal": false,
+      "part": "Trunk of anterior interventricular branch of left coronary artery"
+    },
+    {
+      "number": 9,
+      "label": "Inferior vena cava",
+      "description": "Returns blood from the lower body to the right atrium",
+      "position": [
+        -0.266,
+        -0.4204,
+        0.0939
+      ]
+    },
+    {
+      "number": 10,
+      "label": "Apex",
+      "description": "Tip of the left ventricle — the apex beat (left 5th intercostal space)",
+      "position": [
+        0.5314,
+        -0.561,
+        0.3712
+      ]
+    }
+  ]
+}

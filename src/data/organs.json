@@ -1,0 +1,765 @@
+[
+  {
+    "id": "heart",
+    "nameEn": "Heart",
+    "nameLatin": "Cor",
+    "model": "procedural:heart",
+    "bodyStructureId": "heart",
+    "animation": "heartbeat",
+    "hotspots": [
+      {
+        "number": 1,
+        "label": "Aorta",
+        "description": "The main artery carrying blood out of the heart",
+        "position": [
+          0.1,
+          1.25,
+          -0.05
+        ],
+        "important": true
+      },
+      {
+        "number": 2,
+        "label": "Superior vena cava",
+        "description": "Returns deoxygenated blood from the head, neck and arms to the right atrium",
+        "position": [
+          -0.5,
+          1.05,
+          0.12
+        ]
+      },
+      {
+        "number": 3,
+        "label": "Pulmonary trunk",
+        "description": "Carries deoxygenated blood from the right ventricle to the lungs",
+        "position": [
+          0.18,
+          0.55,
+          0.6
+        ]
+      },
+      {
+        "number": 4,
+        "label": "Right atrium",
+        "description": "Receives venous blood from the body via the venae cavae",
+        "position": [
+          -0.9,
+          0.3,
+          0.1
+        ]
+      },
+      {
+        "number": 5,
+        "label": "Left atrium",
+        "description": "Receives oxygenated blood from the four pulmonary veins",
+        "position": [
+          0.3,
+          0.45,
+          -0.7
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Right ventricle",
+        "description": "Pumps blood through the pulmonary valve to the lungs",
+        "position": [
+          -0.2,
+          -0.25,
+          0.65
+        ]
+      },
+      {
+        "number": 7,
+        "label": "Left ventricle",
+        "description": "Thick-walled chamber pumping oxygenated blood into the aorta",
+        "position": [
+          0.7,
+          -0.3,
+          0.05
+        ],
+        "important": true
+      },
+      {
+        "number": 8,
+        "label": "Coronary arteries",
+        "description": "Supply the heart muscle itself; the LAD runs in the anterior interventricular groove",
+        "position": [
+          0.12,
+          0.0,
+          0.7
+        ],
+        "important": true
+      },
+      {
+        "number": 9,
+        "label": "Inferior vena cava",
+        "description": "Returns blood from the lower body to the right atrium",
+        "position": [
+          -0.55,
+          -0.6,
+          -0.05
+        ]
+      },
+      {
+        "number": 10,
+        "label": "Apex",
+        "description": "Tip of the left ventricle — the apex beat (left 5th intercostal space)",
+        "position": [
+          0.6,
+          -0.95,
+          0.15
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lungs",
+    "nameEn": "Lungs",
+    "nameLatin": "Pulmones",
+    "model": "procedural:lungs",
+    "bodyStructureId": "lung-right-upper-lobe",
+    "animation": "breathing",
+    "hotspots": [
+      {
+        "number": 1,
+        "label": "Trachea",
+        "description": "Carries air from the throat to the lungs",
+        "position": [
+          0,
+          1.1,
+          0.2
+        ],
+        "important": true
+      },
+      {
+        "number": 2,
+        "label": "Right main bronchus",
+        "description": "Wider, shorter and more vertical — inhaled objects usually lodge here",
+        "position": [
+          -0.2,
+          0.48,
+          0.1
+        ]
+      },
+      {
+        "number": 3,
+        "label": "Left main bronchus",
+        "description": "Longer and more horizontal, passing under the aortic arch",
+        "position": [
+          0.22,
+          0.45,
+          0.1
+        ]
+      },
+      {
+        "number": 4,
+        "label": "Right upper lobe",
+        "description": "Separated from the middle lobe by the horizontal fissure",
+        "position": [
+          -0.75,
+          0.65,
+          0.3
+        ]
+      },
+      {
+        "number": 5,
+        "label": "Right middle lobe",
+        "description": "Wedge between the horizontal and oblique fissures (right lung only)",
+        "position": [
+          -0.75,
+          -0.15,
+          0.55
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Right lower lobe",
+        "description": "Largest lobe; auscultated over the posterior chest",
+        "position": [
+          -0.85,
+          -0.45,
+          -0.4
+        ]
+      },
+      {
+        "number": 7,
+        "label": "Left upper lobe",
+        "description": "Includes the lingula, the left counterpart of the middle lobe",
+        "position": [
+          0.75,
+          0.5,
+          0.35
+        ]
+      },
+      {
+        "number": 8,
+        "label": "Left lower lobe",
+        "description": "Separated from the upper lobe by the oblique fissure",
+        "position": [
+          0.85,
+          -0.45,
+          -0.4
+        ]
+      },
+      {
+        "number": 9,
+        "label": "Cardiac notch",
+        "description": "Indentation of the left lung accommodating the heart",
+        "position": [
+          0.3,
+          -0.1,
+          0.45
+        ]
+      },
+      {
+        "number": 10,
+        "label": "Diaphragmatic surface",
+        "description": "Concave base of the lung resting on the dome of the diaphragm",
+        "position": [
+          -0.55,
+          -0.95,
+          0.1
+        ],
+        "important": true
+      }
+    ]
+  },
+  {
+    "id": "brain",
+    "nameEn": "Brain",
+    "nameLatin": "Encephalon",
+    "model": "procedural:brain",
+    "bodyStructureId": "cerebral-hemisphere-l",
+    "animation": "pulse",
+    "hotspots": [
+      {
+        "number": 1,
+        "label": "Frontal lobe",
+        "description": "Planning, personality, voluntary movement and (left) speech production",
+        "position": [
+          0.4,
+          0.4,
+          0.95
+        ],
+        "important": true
+      },
+      {
+        "number": 2,
+        "label": "Central sulcus",
+        "description": "Separates the motor (precentral) from the sensory (postcentral) gyrus",
+        "position": [
+          0.4,
+          0.85,
+          0.1
+        ]
+      },
+      {
+        "number": 3,
+        "label": "Parietal lobe",
+        "description": "Somatosensory processing and spatial awareness",
+        "position": [
+          0.5,
+          0.75,
+          -0.35
+        ]
+      },
+      {
+        "number": 4,
+        "label": "Occipital lobe",
+        "description": "Primary visual cortex",
+        "position": [
+          0.3,
+          0.2,
+          -1.05
+        ]
+      },
+      {
+        "number": 5,
+        "label": "Temporal lobe",
+        "description": "Hearing, memory (hippocampus) and language comprehension",
+        "position": [
+          0.95,
+          -0.3,
+          0.25
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Longitudinal fissure",
+        "description": "Deep cleft separating the two cerebral hemispheres",
+        "position": [
+          0,
+          0.9,
+          0.3
+        ]
+      },
+      {
+        "number": 7,
+        "label": "Cerebellum",
+        "description": "Coordinates movement, balance and posture",
+        "position": [
+          0.35,
+          -0.6,
+          -0.9
+        ],
+        "important": true
+      },
+      {
+        "number": 8,
+        "label": "Brainstem",
+        "description": "Midbrain, pons and medulla — vital centres for breathing and heart rate",
+        "position": [
+          0.15,
+          -0.8,
+          -0.2
+        ]
+      },
+      {
+        "number": 9,
+        "label": "Corpus callosum",
+        "description": "Thick band of fibres connecting the hemispheres (use cross-section)",
+        "position": [
+          0,
+          0.42,
+          0.1
+        ],
+        "internal": true
+      }
+    ]
+  },
+  {
+    "id": "kidneys",
+    "nameEn": "Kidneys",
+    "nameLatin": "Renes",
+    "model": "procedural:kidneys",
+    "bodyStructureId": "kidney-l",
+    "animation": "pulse",
+    "hotspots": [
+      {
+        "number": 1,
+        "label": "Renal cortex",
+        "description": "Outer layer containing the glomeruli that filter the blood",
+        "position": [
+          0.95,
+          0.1,
+          0.05
+        ],
+        "important": true
+      },
+      {
+        "number": 2,
+        "label": "Renal pyramids",
+        "description": "Medullary cones of collecting ducts (use cross-section)",
+        "position": [
+          0.7,
+          0.2,
+          0.05
+        ],
+        "internal": true
+      },
+      {
+        "number": 3,
+        "label": "Renal pelvis",
+        "description": "Funnel collecting urine from the calyces into the ureter",
+        "position": [
+          0.45,
+          0.06,
+          0.08
+        ],
+        "internal": true
+      },
+      {
+        "number": 4,
+        "label": "Renal artery",
+        "description": "Brings ~20% of cardiac output to the kidney",
+        "position": [
+          0.22,
+          0.08,
+          0.05
+        ]
+      },
+      {
+        "number": 5,
+        "label": "Renal vein",
+        "description": "Drains filtered blood into the inferior vena cava",
+        "position": [
+          -0.28,
+          -0.04,
+          0.17
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Ureter",
+        "description": "Muscular tube carrying urine down to the bladder",
+        "position": [
+          0.2,
+          -0.9,
+          0.1
+        ]
+      },
+      {
+        "number": 7,
+        "label": "Adrenal gland",
+        "description": "Endocrine gland on the upper pole: cortisol, aldosterone, adrenaline",
+        "position": [
+          0.56,
+          0.85,
+          0.05
+        ],
+        "important": true
+      },
+      {
+        "number": 8,
+        "label": "Abdominal aorta",
+        "description": "Gives off the renal arteries at the level of L1/L2",
+        "position": [
+          0.06,
+          0.6,
+          0.05
+        ]
+      },
+      {
+        "number": 9,
+        "label": "Inferior vena cava",
+        "description": "Receives both renal veins",
+        "position": [
+          -0.14,
+          0.6,
+          0.16
+        ]
+      }
+    ]
+  },
+  {
+    "id": "liver",
+    "nameEn": "Liver",
+    "nameLatin": "Hepar",
+    "model": "procedural:liver",
+    "bodyStructureId": "liver",
+    "animation": "breathing",
+    "hotspots": [
+      {
+        "number": 1,
+        "label": "Right lobe",
+        "description": "Largest lobe, under the right dome of the diaphragm",
+        "position": [
+          -0.6,
+          0.15,
+          0.6
+        ],
+        "important": true
+      },
+      {
+        "number": 2,
+        "label": "Left lobe",
+        "description": "Thinner lobe extending across the epigastrium",
+        "position": [
+          0.65,
+          0.2,
+          0.35
+        ]
+      },
+      {
+        "number": 3,
+        "label": "Falciform ligament",
+        "description": "Peritoneal fold attaching the liver to the anterior abdominal wall",
+        "position": [
+          0.24,
+          0.3,
+          0.65
+        ]
+      },
+      {
+        "number": 4,
+        "label": "Gallbladder",
+        "description": "Stores and concentrates bile",
+        "position": [
+          -0.32,
+          -0.7,
+          0.55
+        ],
+        "important": true
+      },
+      {
+        "number": 5,
+        "label": "Common bile duct",
+        "description": "Carries bile to the duodenum",
+        "position": [
+          -0.02,
+          -0.8,
+          0.15
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Hepatic portal vein",
+        "description": "Brings nutrient-rich blood from the gut (75% of liver inflow)",
+        "position": [
+          0.15,
+          -0.65,
+          0.0
+        ]
+      },
+      {
+        "number": 7,
+        "label": "Hepatic artery proper",
+        "description": "Supplies oxygenated blood (25% of inflow)",
+        "position": [
+          0.25,
+          -0.65,
+          0.15
+        ]
+      },
+      {
+        "number": 8,
+        "label": "Caudate lobe",
+        "description": "Small posterior lobe beside the IVC",
+        "position": [
+          0.05,
+          -0.1,
+          -0.55
+        ]
+      },
+      {
+        "number": 9,
+        "label": "Inferior vena cava",
+        "description": "Receives the hepatic veins behind the liver",
+        "position": [
+          0.12,
+          0.7,
+          -0.5
+        ]
+      }
+    ]
+  },
+  {
+    "id": "stomach",
+    "nameEn": "Stomach",
+    "nameLatin": "Gaster",
+    "model": "procedural:stomach",
+    "bodyStructureId": "stomach",
+    "animation": "peristalsis",
+    "hotspots": [
+      {
+        "number": 1,
+        "label": "Oesophagus",
+        "description": "Muscular tube delivering swallowed food to the stomach",
+        "position": [
+          -0.15,
+          1.1,
+          0.05
+        ]
+      },
+      {
+        "number": 2,
+        "label": "Cardia",
+        "description": "Region around the oesophageal opening",
+        "position": [
+          0.0,
+          0.72,
+          0.15
+        ]
+      },
+      {
+        "number": 3,
+        "label": "Fundus",
+        "description": "Dome above the cardia; often holds swallowed air",
+        "position": [
+          0.35,
+          1.0,
+          -0.05
+        ],
+        "important": true
+      },
+      {
+        "number": 4,
+        "label": "Body",
+        "description": "Main part where food is mixed with acid and pepsin",
+        "position": [
+          0.85,
+          0.15,
+          0.1
+        ]
+      },
+      {
+        "number": 5,
+        "label": "Greater curvature",
+        "description": "Long convex lateral border; attachment of the greater omentum",
+        "position": [
+          0.55,
+          -0.6,
+          0.35
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Lesser curvature",
+        "description": "Short concave medial border; common site of gastric ulcers",
+        "position": [
+          0.1,
+          0.1,
+          0.25
+        ]
+      },
+      {
+        "number": 7,
+        "label": "Pyloric antrum",
+        "description": "Grinds food and regulates emptying",
+        "position": [
+          -0.2,
+          -0.75,
+          0.3
+        ]
+      },
+      {
+        "number": 8,
+        "label": "Pylorus",
+        "description": "Sphincter controlling passage into the duodenum",
+        "position": [
+          -0.62,
+          -0.25,
+          0.25
+        ],
+        "important": true
+      },
+      {
+        "number": 9,
+        "label": "Duodenum",
+        "description": "First part of the small intestine",
+        "position": [
+          -1.0,
+          -0.6,
+          0.0
+        ]
+      },
+      {
+        "number": 10,
+        "label": "Gastric rugae",
+        "description": "Folds of mucosa that flatten as the stomach fills (use cross-section)",
+        "position": [
+          0.4,
+          0.2,
+          0.1
+        ],
+        "internal": true
+      }
+    ]
+  },
+  {
+    "id": "eye",
+    "nameEn": "Eye",
+    "nameLatin": "Oculus",
+    "model": "procedural:eye",
+    "bodyStructureId": "eyeball-l",
+    "animation": "none",
+    "hotspots": [
+      {
+        "number": 1,
+        "label": "Cornea",
+        "description": "Clear dome that provides most of the eye's focusing power",
+        "position": [
+          0,
+          0.2,
+          0.68
+        ],
+        "important": true
+      },
+      {
+        "number": 2,
+        "label": "Iris",
+        "description": "Pigmented muscular ring controlling pupil size",
+        "position": [
+          0.22,
+          0.0,
+          0.55
+        ],
+        "internal": true
+      },
+      {
+        "number": 3,
+        "label": "Pupil",
+        "description": "Aperture letting light into the eye",
+        "position": [
+          0,
+          0,
+          0.55
+        ],
+        "internal": true
+      },
+      {
+        "number": 4,
+        "label": "Lens",
+        "description": "Changes shape to focus near and far (accommodation)",
+        "position": [
+          0,
+          -0.12,
+          0.42
+        ],
+        "internal": true
+      },
+      {
+        "number": 5,
+        "label": "Sclera",
+        "description": "Tough white outer coat of the eyeball",
+        "position": [
+          0.45,
+          0.35,
+          0.2
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Retina",
+        "description": "Light-sensitive layer of rods and cones (use cross-section)",
+        "position": [
+          0,
+          0.4,
+          -0.35
+        ],
+        "internal": true
+      },
+      {
+        "number": 7,
+        "label": "Optic nerve",
+        "description": "Carries visual signals to the brain",
+        "position": [
+          0.15,
+          0.1,
+          -1.0
+        ],
+        "important": true
+      },
+      {
+        "number": 8,
+        "label": "Superior rectus",
+        "description": "Elevates the eye (CN III)",
+        "position": [
+          0.05,
+          0.55,
+          -0.4
+        ]
+      },
+      {
+        "number": 9,
+        "label": "Lateral rectus",
+        "description": "Abducts the eye (CN VI)",
+        "position": [
+          0.55,
+          0.0,
+          -0.4
+        ]
+      },
+      {
+        "number": 10,
+        "label": "Inferior rectus",
+        "description": "Depresses the eye (CN III)",
+        "position": [
+          0.05,
+          -0.55,
+          -0.4
+        ]
+      }
+    ]
+  }
+]

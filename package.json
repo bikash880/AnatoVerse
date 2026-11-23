@@ -1,0 +1,50 @@
+{
+  "name": "anatoverse",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "vite --host",
+    "api": "node --env-file-if-exists=.env server/skelly.ts",
+    "build": "tsc -b && tsc -p tsconfig.server.json && vite build",
+    "start": "node --env-file-if-exists=.env server/skelly.ts",
+    "typecheck": "tsc -b && tsc -p tsconfig.server.json",
+    "preview": "vite preview --host",
+    "validate": "esbuild scripts/validate-model.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/validate.mjs && node node_modules/.cache/validate.mjs",
+    "build:models": "esbuild scripts/build-models.ts --bundle --platform=node --format=esm --packages=external --log-level=warning --outfile=node_modules/.cache/build-models.mjs && node --max-old-space-size=8192 node_modules/.cache/build-models.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.12.0",
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/postprocessing": "^2.16.3",
+    "framer-motion": "^11.11.9",
+    "fuse.js": "^7.0.0",
+    "postprocessing": "^6.36.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.169.0",
+    "three-mesh-bvh": "^0.7.8",
+    "zod": "^4.6.7",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/extensions": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "@types/node": "^24.19.2",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.169.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "draco3dgltf": "^1.5.9",
+    "fflate": "^0.8.3",
+    "meshoptimizer": "^1.3.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
