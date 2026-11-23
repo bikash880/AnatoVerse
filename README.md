@@ -1,15 +1,117 @@
 # AnatoVerse
 
-**Explore every structure of the human body in 3D.** An interactive 3D anatomy atlas for medical and nursing students. It runs on tablets (touch) and desktops (mouse and keyboard).
+**Explore every structure of the human body in 3D.** An interactive 3D anatomy atlas for medical and nursing students. It runs in the browser on desktops (mouse and keyboard), tablets and phones (touch).
+
+![AnatoVerse: the full-body explorer](docs/screenshots/hero.jpg)
 
 React · TypeScript · Vite · three.js / @react-three/fiber / drei · Zustand · Framer Motion · Fuse.js · Tailwind CSS
 
+## Screenshots
+
+### Full-body explorer
+The main screen (above) shows a complete human body of about 1,900 separate structures, built from real anatomy scans (BodyParts3D). Every bone, muscle, nerve, vessel and organ is its own piece you can click.
+
+- **Left rail:** Front, Back, Side and ¾ views, rotate left/right, a slow turntable spin, zoom and reset.
+- **Header:** the Male / Female switch.
+- **Bottom bar:** the **Layers** slider peels the body from the outside in (Skin → Muscle → Deep → Organs → Bone). Next to it are name labels, the **Live** switch (breathing and heartbeat) and the **Explode** slider.
+- **Explore panel (right):** search, quick links to the organ models, and the system list.
+
+### Click any structure to learn about it
+![Selecting the biceps brachii shows its info card](docs/screenshots/select.jpg)
+
+Click (or tap) a structure, or find it with the search box. It gets a glowing outline and a name tag, and everything else fades to a see-through "ghost" so you can see where it sits. The info card on the right shows:
+
+- the English and Latin names
+- origin, insertion, action, nerve supply and blood supply (for muscles)
+- a clinical note
+- buttons to **Hide**, **Isolate**, show **Only this system**, **Focus** the camera, or **Add to study** list
+
+Double-click empty space to go back to the whole body.
+
+### Name labels for every part
+![All labels mode with callout columns](docs/screenshots/labels.jpg)
+
+Turn on **Labels → All** (or press `L`) and every part facing the camera gets a name tag with a leader line. Labels are arranged in two neat columns so they never overlap. You can also label only the selected part or one group (bones, muscles, nerves, vessels or organs).
+
+### Show or hide whole body systems
+![Skeletal, nervous and cardiovascular systems only, ¾ view](docs/screenshots/systems.jpg)
+
+In the **Systems** tab each body system has an eye button that fades it in or out, and its own opacity slider. Here only the skeleton, nerves and blood vessels are shown, seen from the ¾ view.
+
+### Female body with a see-through skin layer
+![Female body with 55% skin opacity](docs/screenshots/female.jpg)
+
+Switch to **Female** in the header. The **Layers** tab has a semi-transparent skin layer with its own opacity slider, so you can see the muscles and organs underneath.
+
+The female body is the same real anatomy reshaped by a landmark-guided morph (narrower shoulders, wider pelvis, smaller height). Its female reproductive organs are AnatoVerse models fitted into the pelvis. No open, layered scan of a real female body was available.
+
+### Explode view
+![Exploded parts grid grouped by bones, muscles, nerves, vessels and organs](docs/screenshots/explode.jpg)
+
+Drag the **Explode** slider:
+
+- **0 to 60%:** the parts move outward from the centre of the body.
+- **60 to 100%:** they line up into a "parts catalogue", grouped as bones, muscles, nerves, vessels and organs and sorted by size.
+
+Zoom in to read each part's name. Press **Reassemble** (or `R`) to put the body back together.
+
+### Organ deep-dive
+![The heart in the organ viewer](docs/screenshots/heart.jpg)
+
+Open the heart, lungs, brain, kidneys, liver, stomach or eye from **Organs in 3D**. Each organ:
+
+- **Spins slowly** until you touch it.
+- **Has numbered pins** for its main parts, with a list on the right.
+- **Has a Live switch:** the heart beats at 72 bpm with blood flowing, the lungs breathe, and so on.
+- **Has a Cross-section switch** that cuts it open to show the inside.
+
+### Quiz yourself
+![Quiz mode with an amber target](docs/screenshots/quiz.jpg)
+
+**Quiz** highlights a structure in amber and asks you to name it. You can pick from four options or type the name; English or Latin both count. It tracks your score and streak. **Flashcards** and the **Study list** use the parts you saved with *Add to study*.
+
+### Works on phones
+<img src="docs/screenshots/mobile.jpg" alt="AnatoVerse on a phone" width="300">
+
+On a phone the controls get smaller, and the Explore panel and info cards become a sheet you swipe up from the bottom.
+
+### Skelly, the AI anatomy tutor
+Skelly is the little 3D skeleton in the bottom-right corner. Tap it and ask a question by typing or speaking, in English or Hindi (for example *"What does the femur do?"* or *"हृदय कैसे काम करता है?"*).
+
+- **Answers:** Skelly replies in a few simple sentences and reads them aloud.
+- **Show me:** a button flies the camera to the structures in the answer.
+- **Needs an AI key:** set it up as shown in step 4 below.
+
+## Getting started (step by step)
+
+1. **Install [Node.js](https://nodejs.org)** version 23.6 or newer.
+2. **Download the code:**
+   ```bash
+   git clone https://github.com/bikash880/AnatoVerse.git
+   cd AnatoVerse
+   ```
+3. **Install the packages:**
+   ```bash
+   npm install
+   ```
+4. **(Optional) Give Skelly an AI key.** Copy `.env.example` to a new file called `.env`, then put **one** key in it:
+   - **Free:** create a Google Gemini key at [aistudio.google.com](https://aistudio.google.com) → *Get API key*, and set `GEMINI_API_KEY=...`
+   - **Paid:** create a Claude key at [console.anthropic.com](https://console.anthropic.com) → *API Keys*, and set `ANTHROPIC_API_KEY=...`
+
+   The key stays on your computer's server and is never sent to the browser. `.env` is not uploaded to GitHub.
+5. **Start the app:**
+   ```bash
+   npm run dev
+   ```
+6. **Open the app** at **http://localhost:5173** in Chrome or Edge. To use it on a phone or tablet on the same Wi-Fi, open the *Network* address that the terminal prints.
+
+Other commands:
+
 ```bash
-npm install
-npm run dev        # http://localhost:5173 + Skelly API (also exposed on your LAN for testing on an iPad)
 npm run build      # type-check + production build into dist/
+npm start          # serve the production build and the Skelly API together
 npm run validate   # builds every structure for both sexes; checks geometry and that hand/foot bones connect
-npm run build:models  # (optional) real BodyParts3D anatomy → public/models/ — see below
+npm run build:models  # (optional) rebuild the real BodyParts3D anatomy into public/models/ (see below)
 ```
 
 ## Features
@@ -38,7 +140,7 @@ npm run build:models  # (optional) real BodyParts3D anatomy → public/models/ �
 
 Skelly is the small animated 3D skeleton in the bottom-right corner. Tap it to open the chat, then type or speak a question in English or Hindi, e.g. "What does the femur do?" or "हृदय कैसे काम करता है?".
 
-- **Answers:** Claude (`claude-opus-5-5`) replies in 3–5 sentences, in the language you asked in. The structure you have selected is sent along as context.
+- **Answers:** Google Gemini (free tier) or Claude replies in 3–5 sentences, in the language you asked in. The structure you have selected is sent along as context.
 - **Linked to 3D:** each answer also returns the structures it is about. They are matched to the model, the first one is highlighted and the camera flies to it, and every match gets a **Show me** button.
 - **Voice:**
   - Input: a mic button using the Web Speech API, with an **EN / हिंदी** switch (en-IN / hi-IN).
@@ -56,11 +158,12 @@ npm run dev                 # starts the Skelly API (server/skelly.ts, port 8787
 npm run build && npm start  # production: one Node server serves dist/ and /api/skelly/chat
 ```
 
-`server/skelly.ts` is a dependency-free Node HTTP route using the official `@anthropic-ai/sdk`:
+`server/skelly.ts` is a small Node HTTP route with no framework:
 
-- It validates and limits input, sends the last 24 turns of history, and asks for structured JSON output (`answer` + `structures`) at low effort.
-- It enables server-side refusal fallback (`fallbacks: "default"`).
-- It maps SDK errors to friendly messages. Without a key, Skelly explains in the chat how to add one.
+- **Input:** it validates and limits input, sends the last 24 turns of history, and asks for structured JSON output (`answer` + `structures`).
+- **Gemini:** it calls the Gemini REST API. If one model is retired, busy or rate-limited, it tries the next one, and each request times out after 30 s.
+- **Claude:** it uses the official `@anthropic-ai/sdk` at low effort, with server-side refusal fallback.
+- **Errors:** it maps errors to friendly messages. Without a key, Skelly explains in the chat how to add one.
 
 ## Architecture
 
